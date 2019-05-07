@@ -1,0 +1,19 @@
+.btn-save{
+  background: green;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  width: 80px;
+}
+.form-group label{
+  display: inline-block;
+  text-align: left;
+  padding: 5px;
+  width: 120px;
+}
+.form-group input{
+  width: 150px;
+  text-align: left;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+}

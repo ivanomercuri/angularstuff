@@ -11,6 +11,6 @@
     <th>Età</th>
     <th>ACT</th>
   </tr>
-  <tr app-user *ngFor="let user of users" [user]="user" (onDeleteUser)="onDeleteUser($event)">
+  <tr app-user *ngFor="let user of users" [user]="user" (onDeleteUser)="onDeleteUser($event)" (onSelectedUser)="onSelectUser($event)">
   </tr>
 </table>

@@ -1,5 +1,8 @@
 table{
   border: 1px solid #c0c0c0;
+  table-layout: fixed;
+  width: 100%;
+  word-wrap: break-word;
 }
 th{
   padding: 5px;

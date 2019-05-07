@@ -7,9 +7,13 @@ td{
 button{
   padding: 5px;
   border: 1px solid #222;
-  width: 120px;
+  max-width: 120px;
 }
 button.delete{
   background: #fff;
   color:red;
+}
+button.update{
+  background: green;
+  color: white;
 }
