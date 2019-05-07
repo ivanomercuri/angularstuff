@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {UserService} from '../users/user.service';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -8,9 +9,15 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class UserComponent implements OnInit {
   @Input() user;
-  constructor() { }
+  // tslint:disable-next-line:no-output-rename
+  @Output('onDeleteUser') userDeleted = new EventEmitter();
+  constructor( private userService: UserService) { }
 
   ngOnInit() {
   }
 
+  deleteUser() {
+    this.userDeleted.emit( this.user );
+    // this.userService.deleteUsers(this.user);
+  }
 }
